@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Top5Movies";
+}
+<div>
+<h1>Movies</h1>
+<table>
+    <tr>
+        <th>Movie title</th>
+        <th>Rating</th>      
+    </tr>
+    @foreach(var movie in Model)
+    {
+        <tr>
+            <td>@movie.Title</td>
+            <td>@movie.Rating</td>
+        </tr>   
+    }
+
+</table>
+
+</div>
