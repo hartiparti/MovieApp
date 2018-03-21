@@ -1,26 +1,23 @@
 @model List<MovieApp.Models.ViewModels.MovieViewModel>
 
-
-
 @{
     ViewData["Title"] = "Details";
 }
-
-<div>
+ 
    <table>
        <tr>
-           <th>Title</th>
-       </tr>        
-        @foreach(var movie in Model)
-        {
+           <th>Information</th>
+       </tr>
         <tr>
-            <td>@movie.Title</td>
+        @foreach(var movie in Model)
+        {   
             <td>@movie.Genre</td>
             <td>@movie.ReleaseYear</td>
             <td>@movie.Rating</td>
-            <td>@movie.Runtime</td>       
-        </tr>  
+            <td>@movie.Runtime</td>
+        }        
         <img src="@movie.Image" alt="Not found">
+        </tr>
         }
       </table>
     
@@ -33,10 +30,8 @@
         <tr>
             <td><a  asp-controller="Actors" 
                     asp-action="Details" 
-                    asp-route-id="@actor.Id">@actor.ActorName</a></td>
-
+                    asp-route-id="@actor.Id">@movie.ActorName</a></td>
         </tr>   
     }
     </table>
 </div>
-

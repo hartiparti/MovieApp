@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using MovieApp.Models;
 using MovieApp.Models.ViewModels;
@@ -30,21 +31,22 @@ namespace MovieApp.Controllers
                 return View("Error");
             }
 
-            var mv_db = (from m in FakeDatabase.Movies
-                         join a in FakeDatabase.ActorsInMovies on m.ActorId equals a.ActorId
-                         where m.Id == id
-                         select new MovieViewModel
+            var mv_db = (from mov in FakeDatabase.Movies
+                         join am in FakeDatabase.ActorsInMovies on mov.Id equals am.MovieId
+                         join a in FakeDatabase.Actors on am.ActorId equals a.Id
+                         where mov.Id == id
+                         select new MovieViewModel 
                          {
-                             Id = m.Id,
-                             Title = m.Title,
-                             Genre = m.Genre,
-                             ReleaseYear = m.ReleaseYear,
-                             Rating = m.Rating,
-                             Image = m.Image,
-                            
-            
-
-                         }).FirstOrDefault();
+                             Id = mov.Id,
+                             Title = mov.Title,
+                             Genre = mov.Genre,
+                             ReleaseYear = mov.ReleaseYear,
+                             Rating = mov.Rating,
+                             Image = mov.Image,
+                             ActorId = a.Id,
+                             ActorName = a.Name            
+                         }).ToList();
+        
             if(mv_db == null)
             {
                 return View("Error");

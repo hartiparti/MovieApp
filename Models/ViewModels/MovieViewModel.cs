@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+
 namespace MovieApp.Models.ViewModels
 {
     public class MovieViewModel
@@ -10,7 +10,8 @@ namespace MovieApp.Models.ViewModels
         public int Runtime { get; set; }
         public string Genre { get; set; }
         public double Rating { get; set; }
-        public string Image { get; set; }    
-        public List<ActorViewModel> Actors {get;set;}
+        public string Image { get; set; }
+        public int ActorId { get; set; }
+        public string ActorName { get; set; }
     }
 }
