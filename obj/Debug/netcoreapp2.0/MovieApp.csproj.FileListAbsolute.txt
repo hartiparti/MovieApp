@@ -8,3 +8,13 @@ C:\Users\hartmann14\Desktop\P4\MovieApp\obj\Debug\netcoreapp2.0\MovieApp.Assembl
 C:\Users\hartmann14\Desktop\P4\MovieApp\obj\Debug\netcoreapp2.0\MovieApp.AssemblyInfo.cs
 C:\Users\hartmann14\Desktop\P4\MovieApp\obj\Debug\netcoreapp2.0\MovieApp.dll
 C:\Users\hartmann14\Desktop\P4\MovieApp\obj\Debug\netcoreapp2.0\MovieApp.pdb
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\obj\Debug\netcoreapp2.0\MovieApp.csproj.CoreCompileInputs.cache
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\obj\Debug\netcoreapp2.0\MovieApp.AssemblyInfoInputs.cache
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\obj\Debug\netcoreapp2.0\MovieApp.AssemblyInfo.cs
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\obj\Debug\netcoreapp2.0\MovieApp.dll
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\obj\Debug\netcoreapp2.0\MovieApp.pdb
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\bin\Debug\netcoreapp2.0\MovieApp.deps.json
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\bin\Debug\netcoreapp2.0\MovieApp.runtimeconfig.json
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\bin\Debug\netcoreapp2.0\MovieApp.runtimeconfig.dev.json
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\bin\Debug\netcoreapp2.0\MovieApp.dll
+C:\Users\hartmann14\Downloads\MovieApp-master\MovieApp-master\bin\Debug\netcoreapp2.0\MovieApp.pdb

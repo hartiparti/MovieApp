@@ -64,7 +64,7 @@ namespace MovieApp
                 ReleaseYear = 1993,
                 Runtime = 130,
                 Genre= "Action",
-                Image =  "https://images-na.ssl-images-amazon.com/images/M/MV5BYmFmOGZjYTItYjY1ZS00OWRiLTk0NDgtMjQ5MzBkYWE2YWE0XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+                Image =  "https://images-na.ssl-images-amazon.com/images/M/MV5BNWY3M2I0YzItNzA1ZS00MzE3LThlYTEtMTg2YjNiOTYzODQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
                 Rating = 5.4
             },
 
@@ -74,7 +74,7 @@ namespace MovieApp
                 ReleaseYear = 1995,
                 Runtime = 121,
                 Genre= "Action",
-                Image = "https://images-na.ssl-images-amazon.com/images/M/MV5BNWY3M2I0YzItNzA1ZS00MzE3LThlYTEtMTg2YjNiOTYzODQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+                Image = "https://images-na.ssl-images-amazon.com/images/M/MV5BYmFmOGZjYTItYjY1ZS00OWRiLTk0NDgtMjQ5MzBkYWE2YWE0XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
                 Rating = 7.8
             },
 

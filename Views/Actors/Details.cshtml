@@ -3,26 +3,23 @@
 @{
     ViewData["Title"] = "Details";
 }
- 
-   <table>
-       <tr>
-           <th>Information</th>
-       </tr>
+    
+    <table>
         <tr>
-        @foreach(var movie in Model)
-        {   
+            <th>Information</th>
+        </tr>
+        <tr>
+         @foreach(var movie in Model)
+         { 
             <td>@movie.Genre</td>
             <td>@movie.ReleaseYear</td>
             <td>@movie.Rating</td>
             <td>@movie.Runtime</td>
+           
         }        
-        <img src="@movie.Image" alt="Not found">
         </tr>
         }
-      </table>
-    
-    <table>
-    <tr>
+      <tr>
         <th>Actors</th>      
     </tr>
     @foreach(var actor in Model)

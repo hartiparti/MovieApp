@@ -1,42 +1,23 @@
 @model List<MovieApp.Models.ViewModels.MovieViewModel>
-
-
-
 @{
     ViewData["Title"] = "Details";
 }
 
 <div>
-   <table>
-       <tr>
-           <th>Title</th>
-       </tr>        
-        @foreach(var movie in Model)
-        {
+<table>
+    <tr>
+        <th>Movie title</th>
+        <th>Genre</th>
+        <th>Rating</th>      
+    </tr>
+    @foreach(var movie in Model)
+    {
         <tr>
             <td>@movie.Title</td>
             <td>@movie.Genre</td>
-            <td>@movie.ReleaseYear</td>
             <td>@movie.Rating</td>
-            <td>@movie.Runtime</td>       
-        </tr>  
-        <img src="@movie.Image" alt="Not found">
-        }
-      </table>
-    
-    <table>
-    <tr>
-        <th>Actors</th>      
-    </tr>
-    @foreach(var actor in Model)
-    {
-        <tr>
-            <td><a  asp-controller="Actors" 
-                    asp-action="Details" 
-                    asp-route-id="@actor.Id">@actor.ActorName</a></td>
-
         </tr>   
     }
-    </table>
-</div>
+</table>
 
+</div>
