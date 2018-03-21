@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Linq;
+using System;
 using Microsoft.AspNetCore.Mvc;
 using MovieApp.Models;
 using MovieApp.Models.ViewModels;
@@ -40,10 +41,10 @@ namespace MovieApp.Controllers
                              ReleaseYear = m.ReleaseYear,
                              Rating = m.Rating,
                              Image = m.Image,
-                             ActorId = m.ActorId
+                            
             
 
-                         }).SingleOrDefault();
+                         }).FirstOrDefault();
             if(mv_db == null)
             {
                 return View("Error");
