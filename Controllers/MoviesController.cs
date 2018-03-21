@@ -52,7 +52,7 @@ namespace MovieApp.Controllers
                              Age = a.Age
                          }).ToList();
            
-           movie.Actors = movieActors; 
+           mv_db.Actors = movieActors; 
 
             if(mv_db == null)
             {

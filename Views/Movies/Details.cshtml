@@ -1,23 +1,36 @@
-@model List<MovieApp.Models.ViewModels.MovieViewModel>
+
+@model MovieApp.Models.ViewModels.MovieViewModel
+using System.Linq
 @{
     ViewData["Title"] = "Details";
 }
 
+
 <div>
+<img src="@Model.Image" alt="Not found">  
 <table>
     <tr>
-        <th>Movie title</th>
-        <th>Genre</th>
-        <th>Rating</th>      
+        <th>Information</th>  
     </tr>
-    @foreach(var movie in Model)
-    {
+        <tr> 
+            <td>@Model.Title</td>
+        </tr>
         <tr>
-            <td>@movie.Title</td>
-            <td>@movie.Genre</td>
-            <td>@movie.Rating</td>
+            <td>@Model.Genre</td>
         </tr>   
-    }
+            <td>@Model.ReleaseYear</td>
+        </tr>
+            <td>@Model.Rating</td>
+            <td>@Model.Runtime</td>                    
+        </tr>
+        <tr>
+            <td>
+            
+            </td>
+        </tr>
+    
 </table>
+@foreach(var actor in Model.Actors)
+            { @Model.Actors}
 
 </div>
