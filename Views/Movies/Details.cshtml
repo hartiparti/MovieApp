@@ -30,7 +30,9 @@
         </tr>
     
 </table>
-@foreach(var actor in Model.Actors)
-    { @Model.Actor}
+    @foreach(var actor in Model.Actors)
+    { 
+          @actor.Name
+    }
 
 </div>
