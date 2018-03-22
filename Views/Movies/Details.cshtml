@@ -1,6 +1,6 @@
 
 @model MovieApp.Models.ViewModels.MovieViewModel
-using System.Linq
+
 @{
     ViewData["Title"] = "Details";
 }
@@ -31,6 +31,6 @@ using System.Linq
     
 </table>
 @foreach(var actor in Model.Actors)
-            { @Model.Actors}
+    { @Model.Actor}
 
 </div>

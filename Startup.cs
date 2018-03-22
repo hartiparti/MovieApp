@@ -44,9 +44,9 @@ namespace MovieApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
                  routes.MapRoute(
-                    name: "Movies",
+                    name: "Movies" ,
                     template: "{controller=Movies}/{action=Index}/{id?}");
-                    routes.MapRoute(
+                routes.MapRoute(
                     name: "Actors",
                     template: "{controller=Actors}/{action=Index}/{id?}");
 

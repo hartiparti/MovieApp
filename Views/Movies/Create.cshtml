@@ -1,0 +1,18 @@
+@model MovieApp.Models.InputModels.MovieInputModel
+@{
+    ViewData["Title"] = "Create";
+}
+<form method="post">
+<label asp-for="Title">Title:</label>
+<input type="text" asp-for="Title">
+
+<label asp-for="Genre">Genre:</label>
+<input type="text" asp-for="Genre">
+
+<label asp-for="ReleaseYear">ReleaseYear:</label>
+<input type="data" asp-for="ReleaseYear">
+
+<label asp-for="Runtime">Runtime:</label>
+<input type="data" asp-for="ReleaseYear">
+<input type="submit">
+</form>

@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Movies";
 }
+
 <div>
 <h1>Movies</h1>
 <table>
@@ -19,8 +20,14 @@
                     asp-route-id="@movie.Id">@movie.Title</a></td>
             <td>@movie.Genre</td>
             <td>@movie.Rating</td>
+           
         </tr>   
     }
+
 </table>
+<a class="btn btn-primary" asp-controller="Movies" asp-action="Create">Add movie!</a>
+
+ 
+
 
 </div>

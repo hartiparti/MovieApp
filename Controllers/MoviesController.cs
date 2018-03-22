@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Linq;
 using System;
-using Microsoft.AspNetCore.Mvc;
 using MovieApp.Models;
 using MovieApp.Models.ViewModels;
+using MovieApp.Models.InputModels;
+using MovieApp.Models.EntityModels;
 namespace MovieApp.Controllers
 {
     public class MoviesController : Controller
@@ -60,7 +62,33 @@ namespace MovieApp.Controllers
             }
             return View(mv_db);
         }
+        
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public IActionResult Create(MovieInputModel newModel)
+        {   
+               var database = new Movie();
+               {
+                  newModel.Id =  1 + FakeDatabase.Movies.Count();
+                  database.Title = newModel.Title;
+                  database.ReleaseYear = newModel.ReleaseYear;
+                  database.Runtime = newModel.Runtime;
+                  database.Genre = newModel.Genre;
+                  database.Rating = newModel.Rating;
+                  database.Image = newModel.Image;
+               }
+            if(ModelState.IsValid)
+            {   
+                FakeDatabase.Movies.Add(database);
+                return RedirectToAction("Index");
+            }
+            return View();           
+        }
 
         [HttpGet]
         public IActionResult TopFiveMovies()
@@ -83,4 +111,5 @@ namespace MovieApp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
+
 }
